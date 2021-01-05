@@ -1,10 +1,12 @@
+package baekjoon;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class 구슬탈출2_13460 {
 
     public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     public static char[][] map;
@@ -73,7 +75,7 @@ public class Main {
                 next_bx = cur_mb.bx;
                 next_count = cur_mb.count;
 
-                while(true){ //빨간 구슬 이동
+                while(true){ //鍮④컙 援ъ뒳 �씠�룞
                     if(map[next_ry][next_rx] != 'O' && map[next_ry][next_rx] != '#'){
                         next_ry += dy[i]; 
                         next_rx += dx[i]; 
@@ -87,7 +89,7 @@ public class Main {
                     }
                 }
 
-                while(true){  //파란 구슬 이동
+                while(true){  //�뙆�� 援ъ뒳 �씠�룞
                     if(map[next_by][next_bx] != 'O' && map[next_by][next_bx] != '#'){
                         next_by += dy[i]; 
                         next_bx += dx[i];

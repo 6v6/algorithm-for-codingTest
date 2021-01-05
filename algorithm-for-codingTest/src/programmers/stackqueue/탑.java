@@ -1,5 +1,7 @@
+package programmers.stackqueue;
+
 import java.util.*;
-class Solution {
+class Solution1 {
     public int[] solution(int[] heights) {
         int total = heights.length;
         int[] answer = new int[total];
@@ -8,7 +10,7 @@ class Solution {
         int num;
         
         if(st.empty()){
-            System.out.println("비었음");
+            System.out.println("鍮꾩뿀�쓬");
         }
         
         for(int i = 0; i < total; i++){

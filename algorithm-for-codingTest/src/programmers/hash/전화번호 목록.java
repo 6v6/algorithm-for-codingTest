@@ -1,5 +1,7 @@
+package programmers.hash;
+
 import java.util.*;
-class Solution {
+class Solution2 {
     public boolean solution(String[] phone_book) {
         boolean answer = true;
         Arrays.sort(phone_book);

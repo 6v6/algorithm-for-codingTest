@@ -1,5 +1,7 @@
+package programmers.hash;
+
 import java.util.*;
-class Solution {
+class ¿ß¿Â {
     public int solution(String[][] clothes) {
         int answer = 1;
         HashMap<String, Integer> hm = new HashMap<String,Integer>();

@@ -1,3 +1,5 @@
+package programmers.stackqueue;
+
 import java.util.*;
 class Solution {
     public int[] solution(int[] progresses, int[] speeds) {

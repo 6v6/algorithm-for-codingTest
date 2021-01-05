@@ -1,3 +1,5 @@
+package programmers.hash;
+
 import java.util.*;
 class Solution {
     public int[] solution(String[] genres, int[] plays) {
@@ -17,12 +19,12 @@ class Solution {
         }
 
         List<String> list = new ArrayList();
-        list = sortByValue(hm); //value를 기준으로 정렬
+        list = sortByValue(hm); //value瑜� 湲곗��쑝濡� �젙�젹
 
         Iterator<String> iteratorGenres = list.iterator( ); 
          while(iteratorGenres.hasNext()) {
              String genre = iteratorGenres.next();
-             tm = new TreeMap<Integer, Integer>(); //plays, 고유번호
+             tm = new TreeMap<Integer, Integer>(); //plays, 怨좎쑀踰덊샇
              for(int j = 0; j<genres.length; j++){
                 if(genre.equals(genres[j])){
                     if(tm.get(-plays[j])==null){
@@ -53,7 +55,7 @@ class Solution {
     }
 
     public static List sortByValue(final Map map){
-        List<String> list = new ArrayList(); //value를 기준으로 정렬한 값을 담음
+        List<String> list = new ArrayList(); //value瑜� 湲곗��쑝濡� �젙�젹�븳 媛믪쓣 �떞�쓬
         list.addAll(map.keySet());
         Collections.sort(list,new Comparator() {
             public int compare(Object o1,Object o2) {

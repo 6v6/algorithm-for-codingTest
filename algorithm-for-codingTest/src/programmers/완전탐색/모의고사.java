@@ -45,8 +45,6 @@ class Solution {
             }
             else if(sum2 < sum3){
                 al.add(3);
-            }public class 모의고사 {
-                
             }
             else{
                 al.add(2);

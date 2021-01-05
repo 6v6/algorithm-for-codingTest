@@ -1,3 +1,5 @@
+package baekjoon;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,7 +8,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main{
+public class DFS_BFS_1260{
 
     public static LinkedList<Integer>[] nodeList;
     public static void main(String[] args)throws IOException{
@@ -62,7 +64,7 @@ public class Main{
         }
     }
 
-    public static void bfs(int node, boolean[] visited, StringBuilder sb){ //시작노드, 방문확인배열, 경로를 담는 문자열
+    public static void bfs(int node, boolean[] visited, StringBuilder sb){ //�떆�옉�끂�뱶, 諛⑸Ц�솗�씤諛곗뿴, 寃쎈줈瑜� �떞�뒗 臾몄옄�뿴
         Queue<Integer> queue = new LinkedList<Integer>();
         queue.add(node); 
 
