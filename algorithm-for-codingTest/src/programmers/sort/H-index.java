@@ -1,5 +1,6 @@
+package programmers.sort;
 import java.util.*;
-class Solution {
+class Solution3 {
     public int solution(int[] citations) {
         int index = 0;
         int n = citations.length;
@@ -11,7 +12,7 @@ class Solution {
         
         Collections.sort(al);
         
-        //모든 논문의 인용 횟수가 논문의 갯수보다 많을 때
+        //紐⑤뱺 �끉臾몄쓽 �씤�슜 �슏�닔媛� �끉臾몄쓽 媛��닔蹂대떎 留롮쓣 �븣
         if(al.get(0) >= n){
                 return n;
         }

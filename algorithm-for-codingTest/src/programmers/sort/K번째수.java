@@ -1,7 +1,7 @@
 package programmers.sort;
 
 import java.util.*;
-class Solution {
+class Solution2 {
     public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
         ArrayList<Integer> temp;

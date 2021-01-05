@@ -1,5 +1,8 @@
+package programmers.dfsbfs;
+
 import java.util.*;
-class Solution {
+
+class Solution2 {
     
     int answer = 50;
     public int solution(String begin, String target, String[] words) {
@@ -10,17 +13,17 @@ class Solution {
             wordsList.add(words[i]);
         }
         
-        //words에  target이 없으면 0을 return;
+        //words�뿉  target�씠 �뾾�쑝硫� 0�쓣 return;
         if(!wordsList.contains(target))
             return 0;
         
-        //dfs 시작
+        //dfs �떆�옉
         dfs(begin, target, wordsList, 0);
 
         return answer;
     }
     
-    // 알파벳이 하나만 차이 나는지 확인
+    // �븣�뙆踰녹씠 �븯�굹留� 李⑥씠 �굹�뒗吏� �솗�씤
     public boolean differentCheck(String s1, String s2){
         int count = 0;
         for(int i = 0; i < s1.length(); i++){

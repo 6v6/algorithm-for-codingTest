@@ -1,7 +1,7 @@
 package programmers.stackqueue;
 
 import java.util.*;
-class Solution2 {
+class Solution4 {
     class Truck{
         int truck_weight;
         int truck_enter_time;

@@ -1,3 +1,5 @@
+package baekjoon.step;
+
 import java.util.Scanner;
 
 class Solution {
@@ -5,7 +7,7 @@ class Solution {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int number = n;
-        int ten, one; // 10의자리, 1의자리
+        int ten, one; // 10�쓽�옄由�, 1�쓽�옄由�
         int newNum;
         int count = 0;
 

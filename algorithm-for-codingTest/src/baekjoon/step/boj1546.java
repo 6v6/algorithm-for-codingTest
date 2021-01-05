@@ -1,4 +1,5 @@
-package boj;
+package baekjoon.step;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -20,7 +21,7 @@ public class boj1546 {
         double sum = 0;
 
         for(int i = 0; i <n; i++){
-            // /점수/M*100
+            // /�젏�닔/M*100
             double newNum = al.get(i)/max*100;
             sum += newNum;
         }

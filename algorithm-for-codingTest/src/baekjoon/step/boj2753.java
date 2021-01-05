@@ -1,3 +1,5 @@
+package baekjoon.step;
+
 import java.util.Scanner;
 
 class boj2753 {

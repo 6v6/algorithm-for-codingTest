@@ -1,5 +1,7 @@
+package programmers.dfsbfs;
+
 import java.util.*;
-class Solution {
+class Solution3 {
     ArrayList<String> answerList = new ArrayList<String>();
     boolean[] visit;
     

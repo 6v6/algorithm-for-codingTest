@@ -1,4 +1,6 @@
-class Solution {
+package programmers.stackqueue;
+
+class Solution2 {
     public int[] solution(int[] prices) {
         int[] answer = new int[prices.length];
         int count;

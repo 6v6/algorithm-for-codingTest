@@ -1,5 +1,6 @@
+package programmers.sort;
 import java.util.*;
-class Solution {
+class Solution1 {
     public String solution(int[] numbers) {
         
         String[] nums = new String[numbers.length];

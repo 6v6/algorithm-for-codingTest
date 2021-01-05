@@ -1,5 +1,7 @@
+package programmers.stackqueue;
 import java.util.*;
 
+//га╦╟ем
 public class Documents{
     int index;
     int priority;

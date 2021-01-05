@@ -1,7 +1,7 @@
 package programmers.stackqueue;
 
 import java.util.*;
-class Solution {
+class Solution1 {
     public int[] solution(int[] progresses, int[] speeds) {
         ArrayList<Integer> ansList = new ArrayList<>();
         Queue<Integer> period = new LinkedList<Integer>();

@@ -1,4 +1,6 @@
-class Solution {
+package programmers.dfsbfs;
+
+class Solution4 {
     int answer = 0;
     public int solution(int[] numbers, int target) {
         dfs(numbers, target, 0, 0);

@@ -1,7 +1,7 @@
 package programmers.¿ÏÀüÅ½»ö;
 
 import java.util.*;
-class Solution {
+class Solution1 {
     public int[] solution(int[] answers) {
         int[] answer;
         int[] a = {1,2,3,4,5};

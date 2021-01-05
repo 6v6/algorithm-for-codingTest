@@ -1,7 +1,7 @@
 package programmers.stackqueue;
 
 import java.util.*;
-class Solution1 {
+class Solution3 {
     public int[] solution(int[] heights) {
         int total = heights.length;
         int[] answer = new int[total];

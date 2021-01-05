@@ -1,4 +1,6 @@
-class Solution {
+package programmers.dfsbfs;
+
+class Solution1 {
 
     public int solution(int n, int[][] computers) {    
         int answer = 0;

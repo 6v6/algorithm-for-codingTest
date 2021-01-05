@@ -1,12 +1,13 @@
+package programmers.완전탐색;
 import java.util.*;
-class Solution {
+class Solution2 {
     int answer = 0; 
     private HashSet<String> set = new HashSet<>();
     
     public int solution(String numbers) {
         int n = numbers.length();
-        ArrayList<Character> arr = new ArrayList<Character>();  //원본 숫자들
-        ArrayList<Character> result = new ArrayList<Character>(); //조합으로 만들어진 숫자
+        ArrayList<Character> arr = new ArrayList<Character>();  //�썝蹂� �닽�옄�뱾
+        ArrayList<Character> result = new ArrayList<Character>(); //議고빀�쑝濡� 留뚮뱾�뼱吏� �닽�옄
         for(int i = 0; i < numbers.length(); i++){
             arr.add(numbers.charAt(i));
         }
@@ -27,19 +28,19 @@ class Solution {
                 resultString += result.get(i);   
             }
             
-            //중복값 확인
+            //以묐났媛� �솗�씤
             if(!set.contains(resultString)){
                 set.add(resultString);
-                //소수검사
+                //�냼�닔寃��궗
                 if(isPrime(Integer.parseInt(resultString)))
                     answer++;
             }
         }
         
         for(int i = 0; i < n; i++){
-            result.add(arr.remove(i)); //i번째 값을 꺼내서 담음
+            result.add(arr.remove(i)); //i踰덉㎏ 媛믪쓣 爰쇰궡�꽌 �떞�쓬
             permutation(arr, result, n-1, r-1);
-            arr.add(i, result.remove(result.size()-1)); //result에 넣은 값을 꺼내서 원본에 다시 담음
+            arr.add(i, result.remove(result.size()-1)); //result�뿉 �꽔�� 媛믪쓣 爰쇰궡�꽌 �썝蹂몄뿉 �떎�떆 �떞�쓬
         }
     }
     
