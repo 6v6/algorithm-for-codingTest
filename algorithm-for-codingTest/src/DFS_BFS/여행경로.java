@@ -1,4 +1,4 @@
-package DFSBFS;
+package DFS_BFS;
 
 import java.util.*;
 class Solution3 {

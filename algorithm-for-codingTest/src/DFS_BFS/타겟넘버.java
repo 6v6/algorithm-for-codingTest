@@ -1,4 +1,4 @@
-package DFSBFS;
+package DFS_BFS;
 
 class Solution4 {
     int answer = 0;
