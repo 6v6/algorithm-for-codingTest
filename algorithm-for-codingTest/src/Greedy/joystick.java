@@ -1,7 +1,7 @@
 package Greedy;
 
 public class joystick {
-	public int joystick(String name) {
+	public int solution(String name) {
         int result = 0;
         int length = name.length();
         
