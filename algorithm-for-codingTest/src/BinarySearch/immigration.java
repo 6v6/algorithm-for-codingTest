@@ -2,8 +2,7 @@ package BinarySearch;
 
 import java.util.Arrays;
 
-//ÀÔ±¹½É»ç 
-//int ÀÚ·áÇü »ç¿ë½Ã, ¹üÀ§ °ªÀ» ³Ñ¾î°¡¹Ç·Î ÁÖÀÇ
+//ì…êµ­ì‹¬ì‚¬
 public class immigration {
 	public long solution(int n, int[] times) {
 		long answer = Long.MAX_VALUE;
@@ -19,7 +18,7 @@ public class immigration {
 
 			long numbers = 0;
 			for (int i = 0; i < times.length; i++) {
-				// mid½Ã°£¿¡ °¢ ½É»ç¿øµéÀÌ ³¡³½ »ç¶÷ÀÇ ¼ö
+				// midì‹œê°„ì— ê° ì‹¬ì‚¬ì›ë“¤ì´ ëë‚¸ ì‚¬ëŒì˜ ìˆ˜
 				numbers += mid / times[i];
 			}
 
