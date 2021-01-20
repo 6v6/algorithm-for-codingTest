@@ -1,7 +1,9 @@
-package Kakao2019winter;
+package Kakao.WinterIntership2019;
 
 import java.util.*;
-class Solution {
+
+//크레인 인형뽑기 게임
+class drawDollGame {
     public int solution(int[][] board, int[] moves) {
         int answer = 0;
         Stack<Integer> st = new Stack<Integer>();
