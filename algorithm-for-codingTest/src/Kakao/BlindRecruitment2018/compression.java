@@ -1,4 +1,4 @@
-package Kakao.BlindRecuitment2018;
+package Kakao.BlindRecruitment2018;
 
 import java.util.ArrayList;
 import java.util.HashMap;
