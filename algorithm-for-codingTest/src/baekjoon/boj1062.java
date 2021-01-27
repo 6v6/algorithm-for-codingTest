@@ -41,6 +41,12 @@ public class boj1062 {
 			}
 		}
 
+		// 배울 수 있는 단어보다 모르는 단어가 적은 경우
+		if (hs.size() < k) {
+			System.out.println(n);
+			return;
+		}
+
 		boolean[] visit = new boolean[hs.size()];
 		candi = new int[hs.size()];
 		int index = 0;
@@ -50,8 +56,6 @@ public class boj1062 {
 			index++;
 		}
 
-		if (hs.size() < k)
-			k = hs.size();
 		comb(0, visit, hs.size(), k);
 
 		System.out.println(max);
@@ -61,9 +65,7 @@ public class boj1062 {
 		if (k == 0) {
 			for (int i = 0; i < visit.length; i++) {
 				if (visit[i]) {
-					// System.out.print(i);
 					alphabet[candi[i]] = true;
-					// System.out.println(candi[i]);
 				}
 			}
 
@@ -86,7 +88,6 @@ public class boj1062 {
 					alphabet[candi[i]] = false;
 				}
 			}
-
 			return;
 		}
 
